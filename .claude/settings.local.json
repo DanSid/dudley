@@ -3,7 +3,10 @@
     "allow": [
       "WebFetch(domain:raw.githubusercontent.com)",
       "WebFetch(domain:github.com)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(pip3 show:*)",
+      "Bash(pip3 install:*)",
+      "Bash(python3 build_pdf.py)"
     ]
   }
 }

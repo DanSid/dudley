@@ -95,24 +95,48 @@ function Hero() {
 
           {/* Right: product duo */}
           <div className="flex justify-center">
-            <InteractiveProductDisplay
-              imageSrc="/assets/IMG_9302 Scalp & Skin Relief.png"
-              alt="Peppermint Soothe Combo"
-              accent={ACCENT}
-              accent2={ACCENT2}
-              topBadge="🌿 DHT Blocker Formula"
-              bottomBadge="✓ Cleanse + Condition Duo"
-              title="Peppermint Soothe Shampoo + Conditioner"
-              description="A cooling cleanse-and-condition duo built for irritated, tender, or buildup-heavy scalps. The key product notes now sit directly under the hero image so shoppers understand the combo before they scroll."
-              bullets={[
-                'Peppermint cooling relief',
-                'Green tea antioxidant support',
-                'Avocado moisture balance',
-                'Better value as a duo',
-              ]}
-              imageClassName="w-64 md:w-80 object-contain"
-            />
-          </div>
+  <InteractiveProductDisplay
+    imageSrc=""
+    alt="Peppermint Soothe Combo"
+    accent={ACCENT}
+    accent2={ACCENT2}
+    topBadge="🌿 DHT Blocker Formula"
+    bottomBadge="✓ Cleanse + Condition Duo"
+    title="Peppermint Soothe Shampoo + Conditioner"
+    description="A cooling cleanse-and-condition duo built for irritated, tender, or buildup-heavy scalps. The key product notes now sit directly under the hero image so shoppers understand the combo before they scroll."
+    bullets={[
+      'Peppermint cooling relief',
+      'Green tea antioxidant support',
+      'Avocado moisture balance',
+      'Better value as a duo',
+    ]}
+    imageClassName="w-64 md:w-80 object-contain"
+  >
+    {/* VIDEO */}
+    <div className="product-hero-image animate-float w-80 md:w-[32rem] flex flex-col items-center gap-4">
+      <div
+        className="w-80 md:w-[32rem] h-96 md:h-[40rem] rounded-3xl flex flex-col items-center justify-center text-center p-6 border-2 relative overflow-hidden"
+        style={{ 
+          background: 'linear-gradient(135deg, #267151, #267151)', 
+          borderColor: `${ACCENT}40`, 
+          filter: 'drop-shadow(0 30px 50px rgba(0,0,0,0.4))' 
+        }}
+      >
+        <video
+          src="/assets/DUDLEYS_Peppermint_Soothe_Shampoo_&_Conditioner_Motion.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover rounded-3xl"
+        />
+        <div className="absolute bottom-0 left-0 right-0 p-4 flex flex-col items-center justify-center bg-black/40 rounded-b-3xl">
+          <p className="text-white/60 font-semibold text-sm">Peppermint Soothe Shampoo + Conditioner</p>
+        </div>
+      </div>
+    </div>
+  </InteractiveProductDisplay>
+</div>
         </div>
 
         {/* Stats */}

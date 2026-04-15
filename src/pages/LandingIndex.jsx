@@ -61,8 +61,8 @@ const PAGES = [
     reviews: 76,
   },
   {
-    path: '/peppermint-shampoo',
-    title: 'Peppermint Soothe Shampoo 8 oz',
+    path: '/scalp-and-skin',
+    title: 'Scalp & Skin Relief 8 OZ',
     tagline: "The tingle means it's working.",
     accent: '#1A8B8B',
     bg: 'linear-gradient(145deg, #0A2E2E, #041A1A)',
@@ -76,8 +76,8 @@ const PAGES = [
     reviews: 61,
   },
   {
-    path: '/peppermint-conditioner',
-    title: 'Peppermint Soothe Conditioner 8 oz',
+    path: '/protein-boost-seal',
+    title: 'Protein Boost Seal 8 oz',
     tagline: 'The softness your hair has been asking for.',
     accent: '#5B7B6A',
     bg: 'linear-gradient(145deg, #1C3028, #0F1F18)',
@@ -599,22 +599,24 @@ export default function LandingIndex() {
             style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(310px, 1fr))', gap: '24px' }}
           >
             {PAGES.map((page, i) => (
-              <motion.div
-                key={page.path}
-                variants={cardVariant}
-                whileHover={{
-                  y: -10,
-                  scale: 1.025,
-                  boxShadow: `0 24px 64px rgba(0,0,0,0.55), 0 0 0 1px ${page.accent}30`,
-                }}
-                whileTap={{ scale: 0.98 }}
-                transition={{ type: 'spring', stiffness: 280, damping: 22 }}
-                style={{ borderRadius: '24px', overflow: 'hidden' }}
-              >
-                <Link
-                  to={page.path}
-                  style={{ display: 'block', borderRadius: '24px', overflow: 'hidden', background: page.bg, border: `1px solid ${page.border}`, boxShadow: '0 12px 40px rgba(0,0,0,0.4)', textDecoration: 'none' }}
-                >
+                <motion.div
+    key={page.path}
+    variants={cardVariant}
+    whileHover={{
+      y: -10,
+      scale: 1.025,
+      boxShadow: `0 24px 64px rgba(0,0,0,0.55), 0 0 0 1px ${page.accent}30`,
+    }}
+    whileTap={{ scale: 0.98 }}
+    transition={{ type: 'spring', stiffness: 280, damping: 22 }}
+    style={{ borderRadius: '24px', overflow: 'hidden' }}
+  >
+    <a
+      href={page.path}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ display: 'block', borderRadius: '24px', overflow: 'hidden', background: page.bg, border: `1px solid ${page.border}`, boxShadow: '0 12px 40px rgba(0,0,0,0.4)', textDecoration: 'none' }}
+    >
                   <div style={{ padding: '24px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
                       <motion.span
@@ -672,7 +674,7 @@ export default function LandingIndex() {
                       </motion.span>
                     </div>
                   </div>
-                </Link>
+                </a>
               </motion.div>
             ))}
           </motion.div>

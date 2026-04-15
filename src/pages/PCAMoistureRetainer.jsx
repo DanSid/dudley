@@ -99,25 +99,49 @@ function Hero() {
           </div>
 
           {/* Right: product image */}
-          <div className="flex justify-center">
-            <InteractiveProductDisplay
-              imageSrc="/assets/PCA 16 oz.png"
-              alt="PCA Moisture Retainer 16 oz"
-              accent={ACCENT}
-              accent2="#DDB95A"
-              topBadge="🧬 Sodium PCA Technology"
-              bottomBadge="✓ Non-Greasy Formula"
-              title="PCA Moisture Retainer 16 oz"
-              description="A lightweight daily moisturizer that pulls moisture from the air into the hair shaft and helps keep styles soft without grease. The quick benefit summary now sits right beside the hero visual."
-              bullets={[
-                'Draws in moisture all day',
-                'Biotin support for strength',
-                'Works on wet or dry hair',
-                'Family-friendly daily use',
-              ]}
-              imageClassName="w-72 md:w-96 object-contain"
-            />
-          </div>
+         <div className="flex justify-center">
+  <InteractiveProductDisplay
+    imageSrc=""
+    alt="PCA Moisture Retainer 16 oz"
+    accent={ACCENT}
+    accent2="#DDB95A"
+    topBadge="🧬 Sodium PCA Technology"
+    bottomBadge="✓ Non-Greasy Formula"
+    title="PCA Moisture Retainer 16 oz"
+    description="A lightweight daily moisturizer that pulls moisture from the air into the hair shaft and helps keep styles soft without grease. The quick benefit summary now sits right beside the hero visual."
+    bullets={[
+      'Draws in moisture all day',
+      'Biotin support for strength',
+      'Works on wet or dry hair',
+      'Family-friendly daily use',
+    ]}
+    imageClassName="w-72 md:w-96 object-contain"
+  >
+    {/* VIDEO */}
+    <div className="product-hero-image animate-float w-80 md:w-[32rem] flex flex-col items-center gap-4">
+      <div
+        className="w-80 md:w-[32rem] h-96 md:h-[40rem] rounded-3xl flex flex-col items-center justify-center text-center p-6 border-2 relative overflow-hidden"
+        style={{ 
+          background: 'linear-gradient(135deg, #121f43, #121f43)', 
+          borderColor: `${ACCENT}20`, 
+          filter: 'drop-shadow(0 30px 50px rgba(0,0,0,0.4))' 
+        }}
+      >
+        <video
+          src="/assets/DUDLEYS_PCA_Moisture_Retainer_Motion.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover rounded-3xl"
+        />
+        <div className="absolute bottom-0 left-0 right-0 p-4 flex flex-col items-center justify-center bg-black/40 rounded-b-3xl">
+          <p className="text-white/60 font-semibold text-sm">PCA Moisture Retainer 16 oz</p>
+        </div>
+      </div>
+    </div>
+  </InteractiveProductDisplay>
+</div>
         </div>
 
         {/* Trust bar */}
@@ -217,8 +241,9 @@ function Benefits() {
               </div>
             </div>
             <div className="flex justify-center">
+           
               <img
-                src="/assets/IMG_9305 PCA 16 oz.png"
+                src="/assets/PCA 16 oz.png"
                 alt="PCA Moisture Retainer application"
                 className="w-56 md:w-72 object-contain"
                 style={{ filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.15))' }}

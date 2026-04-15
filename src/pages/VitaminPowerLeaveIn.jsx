@@ -95,46 +95,45 @@ function Hero() {
           </div>
 
           {/* Right */}
-          <div className="flex justify-center">
-            <InteractiveProductDisplay
-              imageSrc=""
-              alt="Vitamin Power Leave-In Conditioner 8 oz"
-              accent={ACCENT}
-              accent2={ACCENT2}
-              topBadge="⚡ Spray-and-Go Formula"
-              bottomBadge="✓ Zero Rinse Required"
-              title="Vitamin Power Leave-In Conditioner 8 oz"
-              description="A fast daily leave-in for people who want moisture, softness, and protection without adding another rinse step. The product summary now lives directly under the hero visual."
-              bullets={[
-                'Quick spray application',
-                'Lightweight daily moisture',
-                'Great between wash days',
-                'Family-friendly convenience',
-              ]}
-              imageClassName="w-64 md:w-80 object-contain"
-            >
-
-              {/* IMAGE */}
-<div className="product-hero-image animate-float w-80 md:w-[32rem] flex flex-col items-center gap-4">
-  <div
-    className="w-80 md:w-[32rem] h-96 md:h-[40rem] rounded-3xl flex flex-col items-center justify-center text-center p-6 border-2 relative overflow-hidden"
-    style={{ background: 'linear-gradient(135deg, #2A1200, #3D1A00)', borderColor: `${ACCENT}40`, filter: 'drop-shadow(0 30px 50px rgba(0,0,0,0.4))' }}
+        <div className="flex justify-center">
+  <InteractiveProductDisplay
+    imageSrc=""
+    alt="Vitamin Power Leave-In Conditioner 8 oz"
+    accent={ACCENT}
+    accent2={ACCENT2}
+    topBadge="⚡ Spray-and-Go Formula"
+    bottomBadge="✓ Zero Rinse Required"
+    title="Vitamin Power Leave-In Conditioner 8 oz"
+    description="A fast daily leave-in for people who want moisture, softness, and protection without adding another rinse step. The product summary now lives directly under the hero visual."
+    bullets={[
+      'Quick spray application',
+      'Lightweight daily moisture',
+      'Great between wash days',
+      'Family-friendly convenience',
+    ]}
+    imageClassName="w-64 md:w-80 object-contain"
   >
-    <video
-      src="/assets/Vitamin Power Leave in Conditioner.mp4"
-      autoPlay
-      muted
-      loop
-      playsInline
-      className="w-full h-full object-cover rounded-3xl"
-    />
-    <div className="absolute bottom-0 left-0 right-0 p-4 flex flex-col items-center justify-center bg-black/40 rounded-b-3xl">
-      <p className="text-white/60 font-semibold text-sm">Vitamin Power Leave-In Conditioner 8 oz</p>
+    {/* IMAGE */}
+    <div className="product-hero-image animate-float w-80 md:w-[32rem] flex flex-col items-center gap-4">
+      <div
+        className="w-80 md:w-[32rem] h-96 md:h-[40rem] rounded-3xl flex flex-col items-center justify-center text-center p-6 border-2 relative overflow-hidden"
+        style={{ background: 'linear-gradient(135deg, #2A1200, #3D1A00)', borderColor: `${ACCENT}40`, filter: 'drop-shadow(0 30px 50px rgba(0,0,0,0.4))' }}
+      >
+        <video
+          src="/assets/Vitamin Power Leave in Conditioner.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover rounded-3xl"
+        />
+        <div className="absolute bottom-0 left-0 right-0 p-4 flex flex-col items-center justify-center bg-black/40 rounded-b-3xl">
+          <p className="text-white/60 font-semibold text-sm">Vitamin Power Leave-In Conditioner 8 oz</p>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-</InteractiveProductDisplay>
-          </div>
+  </InteractiveProductDisplay>
+        </div>
         </div>
 
         {/* Stats */}
@@ -181,12 +180,12 @@ function Benefits() {
             No elaborate routine required. Vitamin Power Leave-In was designed for the woman (or man) who refuses to let their hair suffer — even on their busiest days.
           </p>
           <div className="mt-8 flex justify-center">
-    <img
-  src="/assets/DudleysVitaminsPower.png"
-  alt="Dudley's Vitamin Power Ingredients"
-  className="max-w-md h-auto rounded-2xl shadow-lg"
-/>
-  </div>
+            <img
+              src="/assets/DudleysVitaminsPower.png"
+              alt="Dudley's Vitamin Power Ingredients"
+              className="max-w-md h-auto rounded-2xl shadow-lg"
+            />
+          </div>
         </AnimatedSection>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-14">
